@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Terminal Verde</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  background-color: #0D1B0D;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+header {
+  background-color: #00FF41;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0 16px 0;
+  overflow: hidden;
+}
+header .capa {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+header h1 {
+  margin: 16px 0 4px 0;
+  font-size: 2rem;
+}
+header p {
+  margin: 0;
+  padding: 0 16px;
+  opacity: 0.9;
+}
+main {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.post {
+  background-color: #1a1a2e;
+  color: #EEEEEE;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 24px;
+  border: 1px solid #00FF41;
+}
+.post-icone {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+h2 { margin-top: 0; color: #00FF41; }
+.autor { font-style: italic; opacity: 0.7; margin-top: -8px; }
+footer { text-align: center; padding: 16px; opacity: 0.6; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+<img src="data:image/png;base64,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" alt="Capa do blog Terminal Verde" class="capa">
+<h1>Terminal Verde</h1>
+<p>Comandos, scripts e a vida dentro do terminal</p>
+</header>
+<main>
+<article class="post">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAIAAAABc2X6AAABTElEQVR4nO3cPW7CMBjGcUxqUVSiSoAUoXaJegUk1t6gG0dg6MAdOrKycQGGnIUbIDr0Y2qYOgDlwywViopKrcRxw+PntyEv71+2pSgIhH/jl1xS/u8BbGMwOgajYzA6BqO7OL38+da2M4dZ/u3ktyXndti54D+O9MGJQ1IcOhfQuR1mMDoGo2MwOgajYzA6BqNjMDoGo2MwOgZr23ZqBuewJn3w5v56OQx34aXBaSzQfU17rDJ4V4Fc9VviS1WeXg3OlKtMd1jMN950uQukqWksyHCkH+qL0Z14WVUfnw0OlLf0R1pdedXerLRVBqexIH2wHH8kP667zXW38b0UzWUUZ5orN+mDf5BRXNjIJD54oGMwOgajYzA6BqNjMDoGo2MwOgajYzA6BqNjMDoGo9P9quVMf6J2zLkddi5Y8G8twDEYHYPRMRidc8F7h0MwLPZv7GIAAAAASUVORK5CYII=" alt="Ícone do blog Terminal Verde" class="post-icone">
+<h2>Hello, World a partir do shell</h2>
+<p class="autor">Por: Estudante Alura</p>
+<p>Esse blog é dedicado a quem vive entre parênteses e chaves. Vou compartilhar comandos úteis, atalhos de terminal e dicas para quem quer dominar a linha de comando.</p>
+</article>
+</main>
+<footer><p>&copy; 2026 Terminal Verde</p></footer>
+</body>
+</html>
